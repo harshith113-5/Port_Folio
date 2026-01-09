@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- <link rel="stylesheet" href="../views/style.css"> -->
+    <title>Portfolio | Projects</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Carrois+Gothic+SC&family=Josefin+Sans&family=Noto+Sans:wght@400;700;800&family=Oswald:wght@400;500&family=Poppins:wght@700&display=swap');
+        body
+        {
+            font-family: 'Poppins',sans-serif;
+            background-color: rgb(0,0,33);
+            color: white;
+            background-image: url(../imgs/—Pngtree—technology\ wave\ curve\ lines_5487240.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .navbar1
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:rgb(18,18,62);
+            border-radius: 5px;
+        }
+        .navbar1 ul
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar1 ul li
+        {
+            list-style: none;
+            display: inline-block;
+            margin: 0 18px;
+        }
+        .navbar1 li a
+        {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+        .navbar1 li a:hover
+        {
+            text-shadow: 2px 2px 5px bisque;
+        }
+        .fs
+        {
+            margin: auto;
+            max-width: 80vw;
+        }
+        .fs h1
+        {
+            font-size: 1.9rem;
+            margin: 0;
+        }
+        #element
+        {
+            color: gray;
+        }
+        #ele
+        {
+            color: rgb(0, 238, 255);
+            font-size: 2rem;
+        }
+        .fs .box
+        {
+            background: white;
+            width: 50vw;
+            height: 2px;
+            margin: 50px 0;
+            display: flex;
+        }
+        .fs .box .vertical
+        {
+            height: 90px;
+            width: 1px;
+            background-color: white;
+            margin: 0 170px;
+        }
+        .fs .box .vertical .image img
+        {
+            width: 44px;
+            position: relative;
+            top: -48px;
+            left: -22px;
+        }
+        .fs .box .vertical .v-desc
+        {
+            position: relative;
+            top: 50px;
+            /* transform: translate3d(-50px, 0, 0);  */
+        }
+        .fs .box .vertical .v-txt
+        {
+            position: relative;
+            top: 60px;
+            font-size: 12px;
+            width: 240px;
+        }
+        .fs .box .vertical .v-txt button
+        {
+            font-family: 'Poppins',sans-serif;
+            position: relative;
+            top: 30px;
+            background-color: rgb(56, 56, 250);
+            border: none;
+            /* margin: 10px; */
+            padding: 10px;
+            color: whitesmoke;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 140px;
+        }
+        .fs .box .vertical .v-txt button:hover
+        {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar1 animate__animated animate__fadeIn">
+            <div class="left">Harshith's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li class="item"><a href="/">Home</a></li>
+                    <li class="item"><a href="/about">About</a></li>
+                    <li class="item"><a href="/projects">Projects</a></li>
+                    <li class="item"><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="fs">
+            <span id="element"></span><br>
+            <!-- <h1>My Projects</h1> -->
+            <span id="ele"></span>
+            <div class="box">
+                <div class="vertical">
+                    <div class="image"><img src="../imgs/web-developer-illustration-1004x1024-wcqgbag3.png" alt=""></div>
+                    <div id="v-desc1" class="v-desc animate__animated animate__zoomIn">Harley-davidson</div>
+                    <div id="v-txt1" class="v-txt animate__animated animate__zoomIn">Site of Harley-Davidson Motor Company. Check out current Harley motorcycles, locate a dealer, & browse motorcycle parts and apparel.
+                        <button onclick="window.location.href='https://harley-davidson.onrender.com'">Visit now</button>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="image"><img src="../imgs/web-developer-illustration-1004x1024-wcqgbag3.png" alt=""></div>
+                    <div id="v-desc2" class="v-desc animate__animated animate__zoomIn">Text-Wrap</div>
+                    <div id="v-txt2" class="v-txt animate__animated animate__zoomIn">TextUtils is a ReactJs website built primarily to do various operations on regular typed text. You can safely use WordPad or NotePad for text drafting, and saving, but TextUtils offers much more than simple text drafting.
+                        <button onclick="window.location.href=''">Visit now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['What I have done so far'],
+          typeSpeed: 10,
+          cursorChar: '_',
+        });
+    </script>
+    <script>
+        var typed = new Typed('#ele', {
+          strings: ['My Projects'],
+          typeSpeed: 20,
+          startDelay: 300,
+          cursorChar: '_',
+        });
+    </script>
+</body>
+</html>
