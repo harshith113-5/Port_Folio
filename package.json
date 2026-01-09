@@ -9,9 +9,9 @@
     "mongose": "^0.0.2-security",
     "node": "^20.5.1",
     "nodemon": "^3.0.1",
-    "typed.js": "^2.0.16"
+    "typed.js": "^2.0.16",
   "name": "portfolio",
-  "private": true,
+  "private": "true",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -40,4 +40,5 @@
     "vite": "^7.2.4"
 
   }
+}
 }
