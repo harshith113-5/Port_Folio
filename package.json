@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "scripts":{
     "start":"node app.js"
   },
@@ -11,7 +10,7 @@
     "node": "^20.5.1",
     "nodemon": "^3.0.1",
     "typed.js": "^2.0.16"
-=======
+
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -40,6 +39,7 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.19",
     "vite": "^7.2.4"
->>>>>>> 3e58b6f (Initial portfolio commit)
+
   }
 }
+
